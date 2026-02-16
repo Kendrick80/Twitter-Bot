@@ -1,0 +1,10 @@
+import tweepy
+api_key="IHNw5IsfS1Gth7Y8FaH4RKV7r"
+api_secret="vizU4hgARlYODY0bvkCx1ddA7a8QWFarXPtGxfdAliBXIU0N0v"
+bearer_token=r"AAAAAAAAAAAAAAAAAAAAANkP7QEAAAAAj9jzqYAPEtEgQu5zufbuO1DSwUc%3Dc6DXTk29IlBcmAH6GIGbWoZRfTJM7qQwwkUIcCFfOJLuKI4NSo"
+access_token="1246851585898172417-kHz3y9wnD9z9LZffnvD36sBuPGAKm0"
+access_token_secret="FrCYo4T3tolgp7KFhcSNX55vs5V9pU47eDq2xdMsJ1x9R"
+client=tweepy.Client(bearer_token,api_key,api_secret,access_token,access_token_secret)
+auth=tweepy.OAuth1UserHandler(api_key,api_secret,access_token,access_token_secret)
+api=tweepy.API(auth)
+client.create_tweet(text="Hello Everyone")
